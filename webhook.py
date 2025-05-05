@@ -7,5 +7,5 @@ app = FastAPI()
 async def webhook(request: Request):
     payload = await request.json()
     # You could verify payload['ref'] or signature here
-    subprocess.run("cd /home/ec2-user/my-repo && git pull", shell=True)
+    subprocess.run("cd /home/ec2-user/ec2api && git pull", shell=True)
     # Optionally restart your app if needed
