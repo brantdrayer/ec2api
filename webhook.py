@@ -9,5 +9,3 @@ async def webhook(request: Request):
     # You could verify payload['ref'] or signature here
     subprocess.run("cd /home/ec2-user/my-repo && git pull", shell=True)
     # Optionally restart your app if needed
-    subprocess.run("sudo systemctl restart fastapi", shell=True)
-    return {"message": "Git pull triggered"}
