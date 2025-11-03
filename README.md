@@ -23,14 +23,14 @@ Together, these components model a streamlined, real-world deployment pipeline f
 - Returns the response as structured JSON:
   ```json
   { "joke": "Why did the scarecrow win an award? Because he was outstanding in his field!" }
-Webhook Service (webhook.py)
+### Webhook Service (webhook.py)
 Defines a /webhook endpoint that handles GitHub push events
 
 Executes a git pull command on the EC2 instance when updates are pushed to the repository
 
 Can be configured to restart the running service automatically for seamless updates
 
-Deployment Workflow
+### Deployment Workflow
 Hosted on AWS EC2 using a systemd service running Uvicorn
 
 Supports continuous deployment through:
@@ -39,7 +39,7 @@ GitHub Actions (.github/workflows/deploy.yml)
 
 Webhook-triggered updates from GitHub
 
-🧰 Tech Stack
+## 🧰 Tech Stack
 Python 3.9+
 
 FastAPI — web framework
@@ -52,30 +52,26 @@ AWS EC2 — hosting environment
 
 GitHub Actions — CI/CD automation
 
-🚀 Local Setup
+## 🚀 Local Setup
 
-Clone the repository:
+**Clone the repository:**
 
-bash
-Copy code
 git clone https://github.com/<your-username>/ec2api.git
+
 cd ec2api
-Install dependencies:
 
-bash
-Copy code
+**Install dependencies:**
 pip install -r requirements.txt
-Start the application:
 
-bash
-Copy code
+**Start the application:**
+
 uvicorn main:app --reload
-Access the API locally:
 
-arduino
-Copy code
+**Access the API locally:**
+
 http://127.0.0.1:8000/joke
-🎯 Key Learning Objectives
+
+## 🎯 Key Learning Objectives
 Building and deploying a production-ready API using FastAPI
 
 Consuming external APIs using HTTPX
@@ -87,4 +83,5 @@ Implementing automated deployments via GitHub Actions and webhooks
 Managing persistent services with systemd
 
 📜 License
+
 MIT License
