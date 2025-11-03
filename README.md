@@ -53,6 +53,7 @@ AWS EC2 — hosting environment
 GitHub Actions — CI/CD automation
 
 🚀 Local Setup
+
 Clone the repository:
 
 bash
