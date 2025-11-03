@@ -82,6 +82,10 @@ Implementing automated deployments via GitHub Actions and webhooks
 
 Managing persistent services with systemd
 
-📜 License
+## 🙏 Acknowledgments
 
+- **[FastAPI](https://fastapi.tiangolo.com/)** — for providing the high-performance Python web framework used in this project.  
+- **[icanhazdadjoke](https://icanhazdadjoke.com/)** — for the public joke API that powers the `/joke` endpoint.  
+
+### 📜 License
 MIT License
